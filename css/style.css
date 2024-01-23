@@ -9,9 +9,9 @@
 .customfont{
     font-family: "My Custom Font";
     margin-left: 253px;
-    margin-top: 120px;
+    margin-top: 130px;
     float: left;
-    font-size: 64px;
+    font-size: 72px;
     position: relative;
     color: #FBF9F1;
     animation-name: fontani;
@@ -52,13 +52,12 @@ header{
 cursor: pointer;
 }
 .experienceh1{   
-    left: 38%;
+    left: 42%;
     width: 50%; 
     margin-top: 550px;
     position: relative;
     font-family: "My Custom Font";
     font-size: 48px;
-
     color: #FBF9F1;
   }
   * {
@@ -79,7 +78,7 @@ cursor: pointer;
     content: '';
     position: absolute;
     width: 6px;
-    background-color: white;
+    background-color: #FBF9F1;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -89,6 +88,7 @@ cursor: pointer;
   
   /* Container around content */
   .container {
+    font-family: "My Custom Font";
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
@@ -102,7 +102,7 @@ cursor: pointer;
     width: 25px;
     height: 25px;
     right: -17px;
-    background-color: white;
+    background-color: #FBF9F1;
     border: 4px solid #3c7f89;
     top: 15px;
     border-radius: 50%;
@@ -128,7 +128,7 @@ cursor: pointer;
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid white;
+    border: medium solid #FBF9F1;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
   }
@@ -142,9 +142,9 @@ cursor: pointer;
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid white;
+    border: medium solid #FBF9F1;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent #FBF9F1 transparent transparent;
   }
   
   /* Fix the circle for containers on the right side */
@@ -155,7 +155,7 @@ cursor: pointer;
   /* The actual content */
   .content {
     padding: 20px 30px;
-    background-color: white;
+    background-color: #FBF9F1;
     position: relative;
     border-radius: 6px;
   }
@@ -177,9 +177,9 @@ cursor: pointer;
   /* Make sure that all arrows are pointing leftwards */
     .container::before {
       left: 60px;
-      border: medium solid white;
+      border: medium solid #FBF9F1;
       border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
+      border-color: transparent #FBF9F1 transparent transparent;
     }
   
   /* Make sure all circles are at the same spot */
