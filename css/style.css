@@ -8,8 +8,8 @@
 }
 .customfont{
     font-family: "My Custom Font";
-    margin-left: 253px;
-    margin-top: 130px;
+    margin-left: 20%;
+    margin-top: 8%;
     float: left;
     font-size: 72px;
     position: relative;
@@ -20,14 +20,13 @@
 .imageIndex {
   width: 350px;
   float: right;
-  margin-right: 220px;
-  margin-top: 120px;
+  margin-right: 25%;
+  margin-top: 6%;
   border: 3px solid #FBF9F1;
   border-radius: 40px;
   padding: 5px;
   position: relative;
   z-index: 99;
-  
   
 }
 body{
@@ -60,6 +59,15 @@ cursor: pointer;
     font-size: 48px;
     color: #FBF9F1;
   }
+  .comptencesh1{
+    left: 42%;
+    width: 50%; 
+    margin-top: 250px;
+    position: relative;
+    font-family: "My Custom Font";
+    font-size: 48px;
+    color: #FBF9F1;
+  }
   * {
     box-sizing: border-box;
   }
@@ -67,7 +75,7 @@ cursor: pointer;
   /* The actual timeline (the vertical ruler) */
   .timeline {
     position: relative;
-    max-width: 1200px;
+    max-width: 1000px;
     margin-top: 100px;
     margin-left: 50px;
     margin: 100px auto 0;
