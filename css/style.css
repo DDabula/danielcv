@@ -20,12 +20,12 @@
 .imageIndex {
   width: 350px;
   float: right;
-  margin-right: 25%;
+  margin-left: 13%;
   margin-top: 6%;
   border: 3px solid #FBF9F1;
   border-radius: 40px;
-  padding: 5px;
-  position: relative;
+  padding: 0px;
+  position: absolute;
   z-index: 99;
   
 }
