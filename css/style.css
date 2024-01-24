@@ -1,13 +1,17 @@
 @font-face {
-    font-family: "My Custom Font";
+    font-family: "WinterFont";
     src: url(../font/Winter\ Storm.ttf) 
+}
+@font-face {
+  font-family: "DuckFont";
+  src: url(../font/Duckname.ttf) 
 }
 @keyframes fontani{
     0%   {left:-10000px; top:0px;}
     100% {left:0px; top:0px;}
 }
 .customfont{
-    font-family: "My Custom Font";
+    font-family: "WinterFont";
     margin-left: 28%;
     margin-top: 8%;
     float: left;
@@ -16,6 +20,10 @@
     color: #FBF9F1;
     animation-name: fontani;
     animation-duration: 1s;
+}
+.customfont2{
+  font-family: "DuckFont";
+  color: #3c7f89;
 }
 .imageIndex {
   width: 350px;
@@ -32,8 +40,7 @@
 body{
     background-color: #92C7CF;
 }
-header{
-    background-color: #FBF9F1;
+nav{
     height: 50px;
     border-radius: 30px;
     position: fixed;
@@ -42,12 +49,54 @@ header{
     margin-left: 5px;
     margin-right: 5px;
     z-index: 999;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  left: 1300px;
+  position: relative;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "WinterFont";
+  float: right;
+  margin-left: 40px;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #3c7f89;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+.headerfont{
+  font-family: "DuckFont";
+  margin-left: 10%;
+  color: #3c7f89;
+  font-size: 32px;
+  padding-top: 10px;
+  position: fixed;
 }
 .homebutt{
     width: 45px;
     margin-left: 10px;
 }
-.homebutt:hover{
+.headerfont:hover{
 cursor: pointer;
 }
 .experienceh1{   
@@ -55,7 +104,7 @@ cursor: pointer;
     width: 50%; 
     margin-top: 550px;
     position: relative;
-    font-family: "My Custom Font";
+    font-family: "WinterFont";
     font-size: 48px;
     color: #FBF9F1;
   }
@@ -64,7 +113,7 @@ cursor: pointer;
     width: 50%; 
     margin-top: 250px;
     position: relative;
-    font-family: "My Custom Font";
+    font-family: "WinterFont";
     font-size: 48px;
     color: #FBF9F1;
   }
@@ -94,7 +143,7 @@ cursor: pointer;
   }
   
   .container {
-    font-family: "My Custom Font";
+    font-family: "WinterFont";
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
@@ -219,9 +268,7 @@ cursor: pointer;
 .logos{
   overflow: hidden;
   padding: 40px 10px 40px 10px;
-  background-color: #FBF9F1;
   white-space: nowrap;
-  border-radius: 200px;
 }
 .logoanim {
   display: inline-block;

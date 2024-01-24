@@ -33,3 +33,18 @@ document.addEventListener("DOMContentLoaded", function() {
     // Listen for scroll events
     window.addEventListener('scroll', handleScroll);
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+    for (let anchor of smoothScrollLinks) {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
+});

@@ -6,14 +6,19 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <title>Index</title>
 </head>
-<header> 
-    <img src="./images/buttonhome.png" class="homebutt" onclick="homeclick()" id="buttonh">
-</header>
+<nav>
+    <a class="headerfont" onclick="homeclick()" id="buttonh">Daniel.</a>
+    <ul>
+      <li><a href="#formations">Formations</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 <body>
-    <h1 class="customfont">Salut,<br> moi c'est <br> Daniel</h1>
+    <h1 class="customfont">Salut,<br> moi c'est <br> <div class="customfont2">Daniel.</div></h1>
     <img src="./images/photo_profile.jpg" class="imageIndex"/>
     <br>
-    <h1 class="experienceh1">Formations</h1>
+    <h1 class="experienceh1" style="color: #3c7f89;" id="formations">Formations</h1>
     <div class="timeline"> 
         <div class="container right">
             <div class="content">
@@ -40,7 +45,7 @@
             </div>
           </div>  
     </div>
-    <h1 class="comptencesh1"> Compétences</h1>
+    <h1 class="comptencesh1" style="color: #3c7f89; " id="competences"> Compétences</h1>
     <br><br><br>
     <div class="logos">
       <div class="logoanim">
@@ -65,10 +70,9 @@
         <img src="./images/logojava.png"/>
       </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br>
+    <h1 class="contacth1" style="color: #3c7f89; " id="contact"> Contact</h1>
+
 
    </body>
 <script src="./js/cvjava.js"></script>
