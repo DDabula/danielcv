@@ -117,6 +117,15 @@ cursor: pointer;
     font-size: 48px;
     color: #FBF9F1;
   }
+  .contacth1{
+    left: 45%;
+    width: 50%; 
+    margin-top: 250px;
+    position: relative;
+    font-family: "WinterFont";
+    font-size: 48px;
+    color: #FBF9F1;
+  }
   * {
     box-sizing: border-box;
   }
@@ -279,3 +288,12 @@ cursor: pointer;
   margin-left: 50px;
   margin-right: 50px;
 }
+.contactlogo img{
+  height: 150px;
+  margin-left: 500px;
+  
+}
+
+.buttongmailclick:hover, .buttonlinkedinclick:hover{
+  cursor: pointer;
+  }

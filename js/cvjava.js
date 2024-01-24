@@ -1,9 +1,12 @@
-let button = document.getElementById("buttonh");
+
 function homeclick(){
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
+}
+function linkedinclick(){
+    window.open("https://www.linkedin.com/in/danieldabula/");
 }
 document.addEventListener("DOMContentLoaded", function() {
     // Get all containers
