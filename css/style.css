@@ -101,10 +101,11 @@ nav ul li a:hover::after{
 cursor: pointer;
 }
 .experienceh1{
+  margin: 0 auto;
   display: flex;
   text-align: center;   
-  align-items: center; /* Vertically center the content */
-  justify-content: center; /* Horizontally center the content */
+  align-items: center; 
+  justify-content: center; 
     width: 50%; 
     margin-top: 550px;
     position: relative;
@@ -113,8 +114,11 @@ cursor: pointer;
     color: #FBF9F1;
   }
   .comptencesh1{
-    left: 42%;
-    width: 50%; 
+    margin: 0 auto;
+    display: flex;
+    text-align: center;   
+    align-items: center; 
+    justify-content: center; 
     margin-top: 150px;
     position: relative;
     font-family: "WinterFont";
@@ -122,8 +126,11 @@ cursor: pointer;
     color: #FBF9F1;
   }
   .contacth1{
-    left: 45%;
-    width: 50%; 
+    margin: 0 auto;
+    display: flex;
+    text-align: center;   
+    align-items: center; 
+    justify-content: center;  
     margin-top: 150px;
     position: relative;
     font-family: "WinterFont";
