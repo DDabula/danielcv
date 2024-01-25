@@ -412,16 +412,20 @@ cursor: pointer;
   text-align: center;   
   align-items: center; 
   justify-content: center; 
-  animation: none;
  }
  .buttongmailclick{
+  margin: 0 auto;
+  display: flex;
+  text-align: center;   
+  align-items: center; 
+  justify-content: center;
  }
  .buttongmailclick2{
   margin: 0 auto;
   display: flex;
   text-align: center;   
   align-items: center; 
-  justify-content: center; animation: none;
+  justify-content: center;
   }
  .imageIndex {
   display: flex;
