@@ -430,7 +430,7 @@ cursor: pointer;
   align-items: center; 
   justify-content: center;
 
-  position: absolute;
+  position: relative;
  }
 
 
