@@ -428,7 +428,8 @@ cursor: pointer;
   text-align: center;   
   align-items: center; 
   justify-content: center;
-
+  float: none;
+  margin-left: 0;
   position: relative;
  }
 
