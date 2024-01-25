@@ -405,16 +405,16 @@ cursor: pointer;
   @media screen and (max-width: 600px) {
     body, html{
       overflow-x: hidden;
+      margin: 0;
+      padding: 0;
   }
  .buttongmailclick1{
+  height: 0px;
+float: none;
+  top: 1;
   margin: 0 auto;
-  display: flex;
-  text-align: center;   
-  align-items: center; 
-  justify-content: center; 
-  margin-left: 100%;
-  transform: translate(-25%);
-  animation: none;
+  margin: -150px;
+  position: absolute;
  }
  .buttongmailclick{
   display: flex;
@@ -422,18 +422,18 @@ cursor: pointer;
   align-items: center; 
   justify-content: center;
   float: none;
-  margin: 0 auto;
   margin-left: 100%;
   transform: translate(-25%);
+  margin-top: -250px;
  }
  .buttongmailclick2{
-  margin: 0 auto;
-  display: flex;
-  text-align: center;   
-  align-items: center; 
-  justify-content: center;
-  animation: none;
-  position: absolute;
+  height: 0px;
+  float: none;
+    top: 1;
+    margin: 0 auto;
+    margin: -150px;
+    position: absolute;
+    left: 5%;
   }
  .imageIndex {
   display: flex;
@@ -447,22 +447,42 @@ cursor: pointer;
  .experienceh1{
     margin-top: 100px;
   }
+  
+
+  .buttonlinkedinclick{
+    height: 150px;
+    animation: cartetrans 3s linear infinite; 
+    top: 1;
+    left:0;
+    float: right;
+    margin-right: -35%;
+    margin-top: 100px;
+    
+  }
+ 
   .buttonlinkedinclick1{
     height: 0px;
-    animation: cartetrans 3s linear infinite;
+    float: none;
+    top: 1;
     float: right;
-    margin-right: 20%;
-    top: 1; left: 0;
+    margin:0 auto;
+    margin-top: 100px;
+    position: absolute;
+    left: -12%;
+transform: translate(-50%);
     
   }
   
   .buttonlinkedinclick2{
     height: 0px;
-    animation: cartetransleft 3s linear infinite;
+    float: none;
+    top: 1;
     float: right;
-    margin-right: 20%;
-    top: 1; left: 0;
-    
+    margin:0 auto;
+    margin-top: 100px;
+    position: absolute;
+    left: -13%;
+transform: translate(-50%);
   }
 
   }
