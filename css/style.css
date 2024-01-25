@@ -429,11 +429,8 @@ cursor: pointer;
   text-align: center;   
   align-items: center; 
   justify-content: center;
-  display: block;
-margin-left: auto;
-margin-right: auto;
-width: 50%;
-  position: relative;
+
+  position: absolute;
  }
 
 
