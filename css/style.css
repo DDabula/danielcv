@@ -403,10 +403,19 @@ cursor: pointer;
   }
   @media screen and (max-width: 600px) {
  .buttongmailclick1{
- animation: none;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;   
+  align-items: center; 
+  justify-content: center; 
+  animation: none;
  }
  .buttongmailclick2{
-  animation: none;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;   
+  align-items: center; 
+  justify-content: center; animation: none;
   }
  .imageIndex {
   position: relative;
