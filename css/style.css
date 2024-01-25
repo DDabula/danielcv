@@ -38,6 +38,7 @@
   
 }
 body{
+
     background-color: #92C7CF;
 }
 nav{
@@ -99,8 +100,11 @@ nav ul li a:hover::after{
 .headerfont:hover{
 cursor: pointer;
 }
-.experienceh1{   
-    left: 42%;
+.experienceh1{
+  display: flex;
+  text-align: center;   
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
     width: 50%; 
     margin-top: 550px;
     position: relative;
@@ -333,10 +337,11 @@ cursor: pointer;
     height: 150px;
     margin-left: 500px;
     position: relative;
+    
   }
   .buttongmailclick1{
     height: 150px;
-    animation: cartetransleft 3s linear infinite; 
+    animation: cartetrans 3s linear infinite; 
     float: left;
     top: 1; left: 0;
   }
@@ -355,11 +360,10 @@ cursor: pointer;
     margin-right: 330%;
     
   }
-  .buttonlinkedinclick1:hover{
-    animation: cartetrans 3s linear infinite;
-  }
+ 
   .buttonlinkedinclick1{
     height: 150px;
+    animation: cartetrans 3s linear infinite;
     float: right;
     margin-right: 20%;
     top: 1; left: 0;

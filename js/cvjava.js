@@ -1,14 +1,15 @@
-
-function homeclick(){
+function homeclick() {
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
 }
-function linkedinclick(){
+
+function linkedinclick() {
     window.open("https://www.linkedin.com/in/danieldabula/");
 }
-document.addEventListener("DOMContentLoaded", function() {
+
+document.addEventListener("DOMContentLoaded", function () {
     // Get all containers
     var containers = document.querySelectorAll('.container');
 
@@ -21,11 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
         );
     }
 
-    // Function to handle scroll and show containers
+    // Function to handle scroll and show/hide containers
     function handleScroll() {
-        containers.forEach(function(container) {
+        containers.forEach(function (container) {
             if (isInViewport(container)) {
                 container.classList.add('visible');
+            } else {
+                container.classList.remove('visible');
             }
         });
     }
@@ -35,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Listen for scroll events
     window.addEventListener('scroll', handleScroll);
-});
-document.addEventListener('DOMContentLoaded', function () {
+
+    // Smooth scroll links
     const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
     for (let anchor of smoothScrollLinks) {
         anchor.addEventListener('click', function (e) {
