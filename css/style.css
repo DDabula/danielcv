@@ -242,6 +242,7 @@ cursor: pointer;
   }
 
   @media screen and (max-width: 600px) {
+    
 
     .timeline::after {
       left: 31px;
@@ -402,6 +403,9 @@ cursor: pointer;
     margin-right: 25%;
   }
   @media screen and (max-width: 600px) {
+    body, html{
+      overflow-x: hidden;
+  }
  .buttongmailclick1{
   margin: 0 auto;
   display: flex;
