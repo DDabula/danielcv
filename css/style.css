@@ -242,7 +242,6 @@ cursor: pointer;
   }
 
   @media screen and (max-width: 600px) {
-    
 
     .timeline::after {
       left: 31px;
@@ -401,91 +400,6 @@ cursor: pointer;
     display: inline-block;
     vertical-align: top;
     margin-right: 25%;
-  }
-  @media screen and (max-width: 600px) {
-    body, html{
-      overflow-x: hidden;
-      margin: 0;
-      padding: 0;
-  }
- .buttongmailclick1{
-  height: 0px;
-float: none;
-  top: 1;
-  margin: 0 auto;
-  margin: -150px;
-  position: absolute;
- }
- .buttongmailclick{
-  display: flex;
-  text-align: center;   
-  align-items: center; 
-  justify-content: center;
-  float: none;
-  margin: 0 ;
-  position: none;
-  height: 150px;
- }
- .buttongmailclick2{
-  height: 0px;
-  float: none;
-    top: 1;
-    margin: 0 auto;
-    margin: -150px;
-    position: absolute;
-    left: 5%;
-  }
- .imageIndex {
-  display: flex;
-  text-align: center;   
-  align-items: center; 
-  justify-content: center;
-  float: none;
-  margin: 0 auto;
-  position: relative;
-  
- }
- .experienceh1{
-    margin-top: 100px;
-  }
-  
-
-  .buttonlinkedinclick{
-      height: 150px;
-      margin-top: 100px;
-      display: flex;
-      margin: 0 auto;
-      position: relative;
-      align-items: center;
-      justify-content: ce;
-    
-  }
- 
-  .buttonlinkedinclick1{
-    height: 0px;
-    float: none;
-    top: 1;
-    float: right;
-    margin:0 auto;
-    margin-top: 100px;
-    position: absolute;
-    left: -12%;
-transform: translate(-50%);
-    
-  }
-  
-  .buttonlinkedinclick2{
-    height: 0px;
-    float: none;
-    top: 1;
-    float: right;
-    margin:0 auto;
-    margin-top: 100px;
-    position: absolute;
-    left: -13%;
-transform: translate(-50%);
-  }
-
   }
 
   
