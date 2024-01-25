@@ -305,4 +305,93 @@ cursor: pointer;
 
 .buttongmailclick:hover, .buttonlinkedinclick:hover{
   cursor: pointer;
+  animation: cartetrans 3s linear infinite; 
   }
+  @keyframes cartetrans {
+    from{
+      scale: 1;
+      translate: 0;
+      opacity: 1;
+    } to {
+      scale: 0.8;
+      translate: 30%;
+      opacity: 0;
+    }
+  }
+  @keyframes cartetransleft {
+    from{
+      scale: 1;
+      translate: 0;
+      opacity: 1;
+    } to {
+      scale: 0.8;
+      translate: -30%;
+      opacity: 0;
+    }
+  }
+  .buttongmailclick{
+    height: 150px;
+    margin-left: 500px;
+    position: relative;
+  }
+  .buttongmailclick1{
+    height: 150px;
+  
+    float: left;
+    top: 1; left: 0;
+  }
+  .buttonlinkedinclick:hover {
+    back
+  }
+  .buttongmailclick2{
+    height: 150px;
+    animation: cartetransleft 3s linear infinite; 
+    float: left;
+    top: 1; left: 0;
+  }
+  .buttonlinkedinclick{
+    height: 150px;
+    animation: cartetrans 3s linear infinite; 
+    top: 1;
+    left:0;
+    float: right;
+    margin-right: 330%;
+    
+  }
+  .buttonlinkedinclick1:hover{
+    animation: cartetrans 3s linear infinite;
+  }
+  .buttonlinkedinclick1{
+    height: 150px;
+    float: right;
+    margin-right: 20%;
+    top: 1; left: 0;
+    
+  }
+  
+  .buttonlinkedinclick2{
+    height: 150px;
+    animation: cartetransleft 3s linear infinite;
+    float: right;
+    margin-right: 20%;
+    top: 1; left: 0;
+    
+  }
+  .image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 25%;
+  }
+  .image-containerw{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 25%;
+  }
+
+  
