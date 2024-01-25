@@ -336,12 +336,9 @@ cursor: pointer;
   }
   .buttongmailclick1{
     height: 150px;
-  
+    animation: cartetransleft 3s linear infinite; 
     float: left;
     top: 1; left: 0;
-  }
-  .buttonlinkedinclick:hover {
-    back
   }
   .buttongmailclick2{
     height: 150px;
