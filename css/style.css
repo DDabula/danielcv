@@ -401,5 +401,15 @@ cursor: pointer;
     vertical-align: top;
     margin-right: 25%;
   }
+  @media screen and (max-width: 600px) {
+ .buttongmailclick{
+  margin-right:
+   500%;
+ }
+ .imageIndex {
+  position: relative;
+ }
+
+  }
 
   
