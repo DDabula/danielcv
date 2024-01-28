@@ -466,13 +466,10 @@ float: none;
 
     width: auto;
     height: 150px;
-          margin-right: 50%;
-          margin-left: 50%;
   }
   .iphoneplshelp{
     position: relative;
-    margin-right: 50%;
-    margin-left: 120%;
+    margin-left: 123%;
     z-index: 9999;
     align-items: center;
     text-align: center;
