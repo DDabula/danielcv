@@ -406,16 +406,6 @@ cursor: pointer;
       overflow-x: hidden;
       align-items: center;
   }
-  .buttongmailclick{
-    height: 150px;
-          position: relative;
-          margin-left: 50%;
-          margin-right: 50%;
-          z-index: 9999;
-          align-items: center;
-          text-align: center;
-        
-  }
  .buttongmailclick1{
   height: 0px;
 float: none;
@@ -448,15 +438,32 @@ float: none;
     margin-top: 100px;
   }
 
-
+  .buttongmailclick{
+    height: 150px;
+          position: relative;
+          margin-left: 50%;
+          margin-right: 50%;
+          z-index: 9999;
+          align-items: center;
+          text-align: center;
+          margin-top: -150px;
+        
+  }
   .buttonlinkedinclick{
+    height: 150px;
+    animation: none; 
+    top: none;
+    left:none;
+    float: none;
       height: 150px;
       margin-top: 100px;
-      display: flex;
-      margin: 0 auto;
       position: relative;
       align-items: center;
-      justify-content: center;
+      text-align: center;
+      margin-right: 50%;
+      margin-left: 50%;
+
+      z-index: 9999;
 
   }
 
