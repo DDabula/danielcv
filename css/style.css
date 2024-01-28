@@ -463,13 +463,17 @@ float: none;
   }
   .buttonlinkedinclick{
 
-
+    height: 150px;
+    animation: none; 
+    top: 0;
+    left:0;
+    left: 50%;
+    right: 50%;
+    transform: translate(-25%);
+    margin-right: 0%;
     width: auto;
     height: 150px;
-  }
-  .iphoneplshelp{
     position: relative;
-    margin-left: 123%;
     z-index: 9999;
     align-items: center;
     text-align: center;
@@ -479,30 +483,45 @@ float: none;
     left:none;
     float: none;
   }
+
   .buttonlinkedinclick1{
-    height: 0px;
-    float: none;
-    top: 1;
-    float: right;
-    margin:0 auto;
-    margin-top: 100px;
+    height: 150px;
+  right: 50%;
+  left: 50%;
+  top: 1;
+  transform: translate(-75%);
+  left: 0;
     position: absolute;
-    left: -12%;
-transform: translate(-50%);
+        margin-left: 0%;
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+    top: none;
+    left:none;
+    float: none;
 
 
   }
 
   .buttonlinkedinclick2{
-    height: 0px;
-    float: none;
-    top: 1;
-    float: right;
-    margin:0 auto;
-    margin-top: 100px;
+    height: 150px;
+  right: 50%;
+  left: 50%;
+  top: 1;
+  transform: translate(-75%);
+  left: 0;
     position: absolute;
-    left: -13%;
-transform: translate(-50%);
+        margin-left: 0%;
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+    top: none;
+    left:none;
+    float: none;
   }
 
   }
