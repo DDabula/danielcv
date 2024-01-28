@@ -54,3 +54,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+const testtt = document.getElementById("test");
+function test(){
+    document.body.style.backgroundColor = "red";
+    testtt.getAnimations.
+}
+function test2(){
+
+}
