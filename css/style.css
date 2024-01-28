@@ -408,12 +408,12 @@ cursor: pointer;
   }
   .buttongmailclick{
     height: 150px;
-    float: left;
           position: relative;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          z-index: 1;
+          margin-left: 50%;
+          margin-right: 50%;
+          z-index: 9999;
+          align-items: center;
+          text-align: center;
         
   }
  .buttongmailclick1{
