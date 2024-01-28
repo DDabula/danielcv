@@ -481,6 +481,25 @@ float: none;
     justify-content: center;
     top: none;
     left:none;
+  
+    float: none;
+  }
+  .buttonlinkedinclick2{
+    height: 150px;
+  right: 50%;
+  left: 50%;
+  top: 1;
+  transform: translate(-75%);
+  left: 0;
+    position: absolute;
+        margin-left: 0%;
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+    top: none;
+    left:none;
     float: none;
   }
 
@@ -505,24 +524,6 @@ float: none;
 
   }
 
-  .buttonlinkedinclick2{
-    height: 150px;
-  right: 50%;
-  left: 50%;
-  top: 1;
-  transform: translate(-75%);
-  left: 0;
-    position: absolute;
-        margin-left: 0%;
-    z-index: 1;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-    justify-content: center;
-    top: none;
-    left:none;
-    float: none;
-  }
 
   }
 
