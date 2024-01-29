@@ -108,7 +108,7 @@ cursor: pointer;
   align-items: center; 
   justify-content: center; 
     width: 50%; 
-    margin-top: 550px;
+    margin-top: 0%;
     position: relative;
     font-family: "WinterFont";
     font-size: 48px;
@@ -126,6 +126,19 @@ cursor: pointer;
     font-size: 48px;
     color: #FBF9F1;
     margin-bottom: -150px;
+  }
+  .formations i{
+    margin: 0 auto;
+    display: flex;
+    text-align: center;   
+    align-items: center; 
+    justify-content: center; 
+      width: 50%; 
+      margin-top: 35%;
+      position: relative;
+      font-family: "WinterFont";
+      font-size: 48px;
+      color: #FBF9F1;
   }
   .ri-code-s-slash-line{
     margin: 0 auto;
@@ -264,6 +277,33 @@ cursor: pointer;
   font-family: "WinterFont";
 }
   @media screen and (max-width: 600px) {
+    .experienceh1{
+      margin: 0 auto;
+      display: flex;
+      text-align: center;   
+      align-items: center; 
+      justify-content: center; 
+        width: 50%; 
+        margin-top: -0%;
+        position: relative;
+        font-family: "WinterFont";
+        font-size: 48px;
+        color: #FBF9F1;
+      }
+      .formations i{
+        margin: 0 auto;
+        display: flex;
+        text-align: center;   
+        align-items: center; 
+        justify-content: center; 
+          width: 50%; 
+          margin-top: 35%;
+          margin-bottom: -25%;
+          position: relative;
+          font-family: "WinterFont";
+          font-size: 48px;
+          color: #FBF9F1;
+      }
 
     .timeline::after {
       left: 31px;
@@ -339,7 +379,14 @@ cursor: pointer;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   align-items: center;
   gap: 2.3rem;
-  margin-top: 5px;
+  margin-top: 50px;
+}
+.competences-page1{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  align-items: center;
+  gap: 2.3rem;
+  margin-top: 50px;
 }
 .boite{
   padding: 80px 50px 66px;
@@ -350,7 +397,8 @@ cursor: pointer;
   transition: all .50s ease;
   cursor: pointer;
   border-color: #3c7f89;
-  
+  height: 550px;
+
 }
 .boite img{
   margin-bottom: 20px;
