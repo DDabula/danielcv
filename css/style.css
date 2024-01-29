@@ -125,6 +125,7 @@ cursor: pointer;
     font-family: "WinterFont";
     font-size: 48px;
     color: #FBF9F1;
+    margin-bottom: -150px;
   }
   .contacth1{
     margin: 0 auto;
@@ -235,13 +236,20 @@ cursor: pointer;
   
 
   .content {
-    padding: 40px 30px;
+    padding: 0px 30px;
     background-color: #FBF9F1;
     position: relative;
     border-radius: 6px;
     border-radius: 100px;
   }
-
+  .centrer-text{
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+.centrer-text h2{
+  font-family: "WinterFont";
+}
   @media screen and (max-width: 600px) {
 
     .timeline::after {
@@ -295,26 +303,91 @@ cursor: pointer;
 }
 .logos{
   overflow: hidden;
-  padding: 370px 10px 0px 10px;
+  padding: 100px 10px 0px 10px;
   white-space: nowrap;
 }
 .logoanim {
   display: inline-block;
-  animation: 5s infinite slide linear;
+  animation: 0s infinite slide linear;
 }
 .logoanim img {
   opacity: 25%;
-  filter: grayscale(100%);
   height: 150px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 .contactlogo img{
   height: 150px;
   margin-left: 500px;
   
 }
+.competences-page{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  align-items: center;
+  gap: 2.3rem;
+  margin-top: 5px;
+}
+.boite{
+  padding: 80px 50px 66px;
+  background: #FBF9F1;
+  border-radius: 28px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px var(#3c7f89);
+  transition: all .50s ease;
+  cursor: pointer;
+  border-color: #3c7f89;
+  
+}
+.boite img{
+  margin-bottom: 20px;
+}
+.boite h3{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "DuckFont";
+}
+.boite p{
+  font-size: 28px;
+  font-weight: 400;
+  color: #3c7f89;
+  line-height: 30px;
+  margin-bottom: 20px;
+  font-family: "WinterFont";
+}
+.boite a {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 1.273em;
+  font-weight: 700;
+  padding: 7px 0;
+  color: #3c7f89;
+  text-decoration: none;
+  transition: all .50s ease;
+  font-family: "WinterFont";
+  position: relative; /* Add this line */
+}
 
+.boite a::after {
+  content: '';
+  width: 0;
+  height: 2px; /* Adjust this value as needed */
+  background: #3c7f89;
+  position: absolute;
+  left: 0;
+  bottom: 7px; /* Adjust this value as needed */
+  transition: 0.5s;
+}
+
+.boite a:hover::after {
+  width: 100%;
+}
+
+.boite:hover{
+  border: 1px solid var(#3c7f89);
+  transform: translateY(-5px) scale(1.03);
+}
 .buttongmailclick:hover, .buttonlinkedinclick:hover{
   cursor: pointer;
   animation: cartetrans 3s linear infinite; 
