@@ -127,6 +127,19 @@ cursor: pointer;
     color: #FBF9F1;
     margin-bottom: -150px;
   }
+  .ri-code-s-slash-line{
+    margin: 0 auto;
+    display: flex;
+    text-align: center;   
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 150px;
+    position: relative;
+    font-family: "WinterFont";
+    font-size: 48px;
+    color: #FBF9F1;
+    margin-bottom: -150px;
+  }
   .contacth1{
     margin: 0 auto;
     display: flex;
@@ -330,9 +343,9 @@ cursor: pointer;
 }
 .boite{
   padding: 80px 50px 66px;
-  background: #FBF9F1;
+  background: transparent;
   border-radius: 28px;
-  border: 1px solid transparent;
+  border: 3px solid transparent;
   box-shadow: 0 0 5px var(#3c7f89);
   transition: all .50s ease;
   cursor: pointer;
@@ -362,7 +375,7 @@ cursor: pointer;
   line-height: 1.273em;
   font-weight: 700;
   padding: 7px 0;
-  color: #92C7CF;
+  color: #FBF9F1;
   text-shadow: 0 0 5px var(black);
   text-decoration: none;
   transition: all .50s ease;
@@ -588,7 +601,7 @@ float: none;
   right: 50%;
   left: 50%;
   top: 1;
-  transform: translate(-75%);
+  transform: translate(-65%);
   left: 0;
     position: absolute;
         margin-left: 0%;
