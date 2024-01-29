@@ -54,3 +54,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+document.addEventListener('DOMContentLoaded', function() {
+    var button = document.querySelector('.mobile-nav-button');
+    var navList = document.querySelector('nav ul');
+
+    button.addEventListener('click', function() {
+      navList.classList.toggle('active');
+    });
+  });
