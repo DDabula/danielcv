@@ -41,7 +41,7 @@ body{
 
     background-color: #92C7CF;
 }
-nav{
+.navlist{
     height: 50px;
     border-radius: 30px;
     position: fixed;
@@ -57,13 +57,13 @@ nav{
   
 }
 
-nav ul li{
+.navlist ul li{
   display: inline-block;
   list-style: none;
-  left: 1300px;
+  right: -320%;
   position: relative;
 }
-nav ul li a{
+.navlist ul li a{
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -72,7 +72,7 @@ nav ul li a{
   margin-left: 40px;
   position: relative;
 }
-nav ul li a::after{
+.navlist ul li a::after{
   content: '';
   width: 0;
   height: 3px;
@@ -82,10 +82,17 @@ nav ul li a::after{
   bottom: -6px;
   transition: 0.5s;
 }
-nav ul li a:hover::after{
+.navlist ul li a:hover::after{
   width: 100%;
 }
-
+#menu-icon{
+  color: #FBF9F1;
+  display: none;
+  font-size: 28px;
+  align-items: center;
+  position: absolute;
+  right: 5%;
+}
 .headerfont{
   font-family: "DuckFont";
   margin-left: 10%;
@@ -164,6 +171,7 @@ cursor: pointer;
     font-family: "WinterFont";
     font-size: 48px;
     color: #FBF9F1;
+    margin-bottom: -150px;
   }
   .formstyle{
     font-family: "WinterFont";
@@ -237,9 +245,9 @@ cursor: pointer;
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid #FBF9F1;
+    border: medium solid #3c7f89;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent #3c7f89;
   }
   
  
@@ -251,9 +259,9 @@ cursor: pointer;
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid #FBF9F1;
+    border: medium solid #3c7f89;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #FBF9F1 transparent transparent;
+    border-color: transparent #3c7f89 transparent transparent;
   }
 
   .right::after {
@@ -262,6 +270,8 @@ cursor: pointer;
   
 
   .content {
+    border: 3px solid;
+    border-color: #3c7f89;
     padding: 40px 30px;
     background-color: #FBF9F1;
     position: relative;
@@ -277,6 +287,69 @@ cursor: pointer;
   font-family: "WinterFont";
 }
   @media screen and (max-width: 600px) {
+    #menu-icon{
+      display: block;
+    }
+    .navlist{
+      height: 50px;
+      border-radius: 30px;
+      position: fixed;
+      right: 0;
+      left: 0;
+      margin-left: 5px;
+      margin-right: 5px;
+      z-index: 999;
+      display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    
+  }
+  .navlist ul{
+    list-style-type: none;
+     border-radius: 50px;
+     border-radius: 10px;
+     border: 3px solid;
+     border-color: #FBF9F1;
+    background: #3c7f89;
+    margin-left: 38%;
+    display: none;
+  }
+  .navlist ul.active {
+    display: block; 
+}
+  .navlist ul li{
+    display: flex;
+    left: 1%;
+    position: relative;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    
+  }
+  .navlist ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "WinterFont";
+    float: left;
+    padding: 10px;
+    margin-left: 40px;
+    position: relative;
+  }
+  .navlist ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: none;
+    position: absolute;
+    left: 0;
+    bottom: none;
+    transition: none;
+  }
+  .navlist ul li a:hover::after{
+    width: 100%;
+  }
     .experienceh1{
       margin: 0 auto;
       display: flex;
@@ -400,16 +473,41 @@ cursor: pointer;
   height: 550px;
 
 }
+.boitecontact{
+  padding: 50px 0px 50px;
+  background: transparent;
+  border-radius: 28px;
+  border: 3px solid ;
+  box-shadow: 0 0 5px var(#3c7f89);
+  border-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
 .boite img{
   margin-bottom: 20px;
+}
+.boitecontact img{
+  margin-bottom: 20px;
+  height: 150px;
 }
 .boite h3{
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 10px;
   font-family: "DuckFont";
+  color: #FBF9F1;
 }
 .boite p{
+  font-size: 28px;
+  font-weight: 400;
+  color: #3c7f89;
+  line-height: 30px;
+  margin-bottom: 20px;
+  font-family: "WinterFont";
+}
+.boitecontact p{
   font-size: 28px;
   font-weight: 400;
   color: #3c7f89;
@@ -428,9 +526,28 @@ cursor: pointer;
   text-decoration: none;
   transition: all .50s ease;
   font-family: "WinterFont";
-  position: relative; /* Add this line */
+  position: relative; 
+}
+.boitecontact a {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 1.273em;
+  font-weight: 700;
+  padding: 7px 0;
+  color: #FBF9F1;
+  text-shadow: 0 0 5px var(black);
+  text-decoration: none;
+  transition: all .50s ease;
+  font-family: "WinterFont";
+  position: relative; 
 }
 .boite i{
+  vertical-align: middle;
+  font-size: 25px;
+  margin-left: 5px;
+  color: #3c7f89;
+}
+.boitecontact i{
   vertical-align: middle;
   font-size: 25px;
   margin-left: 5px;
@@ -439,11 +556,11 @@ cursor: pointer;
 .boite a::after {
   content: '';
   width: 0;
-  height: 2px; /* Adjust this value as needed */
+  height: 2px; 
   background: #3c7f89;
   position: absolute;
   left: 0;
-  bottom: 7px; /* Adjust this value as needed */
+  bottom: 7px; 
   transition: 0.5s;
 }
 
@@ -454,6 +571,25 @@ cursor: pointer;
 .boite:hover{
   border: 1px solid var(#3c7f89);
   transform: translateY(-5px) scale(1.03);
+}
+.boitecontact a::after {
+  content: '';
+  width: 0;
+  height: 2px; 
+  background: #3c7f89;
+  position: absolute;
+  left: 0;
+  bottom: 7px; 
+  transition: 0.5s;
+}
+
+.boitecontact a:hover::after {
+  width: 100%;
+}
+
+.boitecontact:hover{
+  border: 1px solid var(#3c7f89);
+  
 }
 .buttongmailclick:hover, .buttonlinkedinclick:hover{
   cursor: pointer;
@@ -547,35 +683,18 @@ cursor: pointer;
       overflow-x: hidden;
       align-items: center;
   }
- .buttongmailclick1{
-  height: 150px;
-float: none;
-  top: 1;
-  position: absolute;
-          margin-left: 50%;
-          margin-right: 50%;
-          z-index: 9999;
-          align-items: center;
-          text-align: center;
-          margin-top: -150px;
-          display: flex;
-          justify-content: center;
- }
-
- .buttongmailclick2{
-  height: 150px;
-float: none;
-  top: 1;
-  position: absolute;
-          margin-left: 50%;
-          margin-right: 50%;
-          z-index: 9999;
-          align-items: center;
-          text-align: center;
-          margin-top: -150px;
-          display: flex;
-          justify-content: center;
+  .boite{
+    padding: 80px 50px 66px;
+    background: transparent;
+    border-radius: 28px;
+    border: 3px solid transparent;
+    box-shadow: 0 0 5px var(#3c7f89);
+    transition: all .50s ease;
+    cursor: pointer;
+    border-color: #3c7f89;
+    height: 565px;
   }
+
  .imageIndex {
   display: flex;
   text-align: center;   
@@ -625,48 +744,9 @@ float: none;
   
     float: none;
   }
-  .buttonlinkedinclick2{
-    height: 150px;
-  right: 50%;
-  left: 50%;
-  top: 1;
-  transform: translate(-75%);
-  left: 0;
-    position: absolute;
-        margin-left: 0%;
-    z-index: 1;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-    justify-content: center;
-    top: none;
-    left:none;
-    float: none;
-  }
-
-  .buttonlinkedinclick1{
-    height: 150px;
-  right: 50%;
-  left: 50%;
-  top: 1;
-  transform: translate(-65%);
-  left: 0;
-    position: absolute;
-        margin-left: 0%;
-    z-index: 1;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-    justify-content: center;
-    top: none;
-    left:none;
-    float: none;
-
 
   }
 
-
-  }
 
 
   

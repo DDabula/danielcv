@@ -9,19 +9,21 @@
     <title>Portfolio</title>
 </head>
 <body>
+    
   <div>
-  <nav>
+  <div class="navlist">
     <a class="headerfont" onclick="homeclick()" id="buttonh">Daniel.</a>
+    <i class="ri-align-justify" id="menu-icon"></i>
       <ul>
         <li><a href="#formations">Formations</a></li>
         <li><a href="#competences">Compétences</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
+    </div>
   </div>
   <div>
     <h1 class="customfont">Salut,<br> moi c'est <br> <div class="customfont2">Daniel.</div></h1>
-    <img src="./images/Unknown_person.jpg" class="imageIndex">
+    <img src="./images/photo_profile.jpg" class="imageIndex">
     <br>
     <div class="formations">
     <i class="ri-code-s-slash-line"></i>
@@ -67,19 +69,11 @@
         <div style="line-height:177%;">
           <br>
       </div>
-        <a href="#">
-          Download
-          <i class="ri-arrow-right-line"></i>
-        </a>
       </div>
       <div class="boite">
         <img src="./images/logocsharp.png" height="150px">
         <h3>C#</h3>
         <p>Conception d'applications WPF en utilisant l'architecture MVVM avec C#.</p>
-        <a href="#">
-          Download
-          <i class="ri-arrow-right-line"></i>
-        </a>
       </div>
       <div class="boite">
         <img src="./images/logooracle.png" height="150px">
@@ -88,10 +82,6 @@
         <div style="line-height:177%;">
           <br>
       </div>
-        <a href="#">
-          Download
-          <i class="ri-arrow-right-line"></i>
-        </a>
       </div>
     </div>
     </div>
@@ -104,10 +94,6 @@
           <div style="line-height:177%;">
             <br>
         </div>
-          <a href="#">
-            Download
-            <i class="ri-arrow-right-line"></i>
-          </a>
         </div>
         <div class="boite">
           <img src="./images/logojs.png" height="150px">
@@ -115,10 +101,6 @@
           <p>Utilisation de JavaScript pour des interactions dynamiques sur les sites web.
             <br>
           </p>
-          <a href="#">
-            Download
-            <i class="ri-arrow-right-line"></i>
-          </a>
         </div>
         <div class="boite">
           <img src="./images/logopython.png" height="150px">
@@ -127,10 +109,7 @@
           <div style="line-height:177%;">
             <br>
         </div>
-          <a href="#">
-            Download
-            <i class="ri-arrow-right-line"></i>
-          </a>
+
         </div>
       </div>
       </div>
@@ -157,32 +136,39 @@
     <i class="ri-code-s-slash-line"></i>
     <h1 class="contacth1" style="color: #3c7f89; " id="contact"> Contact</h1>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <div>
-      <div class="image-containerw">
-      <a href="mailto:ddabulatech@gmail.com" target="_blank"><img src="./images/logogmail.png" class="buttongmailclick" action="mailto:ddabulatech@gmail.com" method="post" enctype="text/plain" style="position: relative;animation: none;z-index: 10;">
-    </a>
-    <img src="./images/logogmail.png" class="buttongmailclick1" style="position: absolute; margin-left: 27%;z-index: 1;animation-duration: 3750ms;"/>
-    <img src="./images/logogmail.png" class="buttongmailclick1" style="position: absolute; margin-left: 27%;z-index: 1;"/>
-    <img src="./images/logogmail.png" class="buttongmailclick1" style="position: absolute; margin-left: 27%;z-index: 1;animation-duration: 2250ms;"/>
-    <img src="./images/logogmail.png" class="buttongmailclick1" style="position: absolute; margin-left: 27%;z-index: 1;animation-duration: 1500ms;"/>
-    <img src="./images/logogmail.png" class="buttongmailclick2" style="position: absolute; margin-left: 27%;z-index: 1;animation-duration: 3750ms;"/>
-    <img src="./images/logogmail.png" class="buttongmailclick2" style="position: absolute; margin-left: 27%;z-index: 1;"/>
-    <img src="./images/logogmail.png" class="buttongmailclick2" style="position: absolute; margin-left: 27%;z-index: 1;animation-duration: 2250ms;"/>
-    <img src="./images/logogmail.png" class="buttongmailclick2" style="position: absolute; margin-left: 27%;z-index: 1;animation-duration: 1500ms;"/>
-
-  </div>
-    <div class="image-container">
-      <img src="./images/logoli.png" onclick="linkedinclick()" id="buttonl" class="buttonlinkedinclick" style="position: relative;animation: none;z-index: 10;"/>
-
-      <img src="./images/logoli.png" class="buttonlinkedinclick1" style="position: absolute; margin-left: 61%;z-index: 1;animation-duration: 3750ms;" />
-      <img src="./images/logoli.png" class="buttonlinkedinclick1" style="position: absolute; margin-left: 61%;z-index: 1;" />
-      <img src="./images/logoli.png" class="buttonlinkedinclick1" style="position: absolute; margin-left: 61%;z-index: 1; animation-duration: 2250ms;" />
-      <img src="./images/logoli.png" class="buttonlinkedinclick1" style="position: absolute; margin-left: 61%;z-index: 1; animation-duration: 1500ms;" />
-      <img src="./images/logoli.png" class="buttonlinkedinclick2" style="position: absolute; margin-left: 61%;z-index: 1;animation-duration: 3750ms;" />
-      <img src="./images/logoli.png" class="buttonlinkedinclick2" style="position: absolute; margin-left: 61%;z-index: 1;" />
-      <img src="./images/logoli.png" class="buttonlinkedinclick2" style="position: absolute; margin-left: 61%;z-index: 1; animation-duration: 2250ms;" />
-      <img src="./images/logoli.png" class="buttonlinkedinclick2" style="position: absolute; margin-left: 61%;z-index: 1; animation-duration: 1500ms;" />
+    <section class="competences" id="competences">
+      <div class="centrer-text">
+    <div class="competences-page">
+      <div class="boitecontact">
+        <img src="./images/logogmail.png" height="150px">
+        <h3></h3>
+        <p>Envoyez-moi un courriel</p>
+        <a href="mailto:ddabulatech@gmail.com" target="_blank" action="mailto:ddabulatech@gmail.com" method="post" enctype="text/plain">
+          Courriel
+          <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+      <div class="boitecontact">
+        <img src="./images/logoli.png" height="150px" onclick="linkedinclick()" id="buttonl"/>
+        <h3></h3>
+        <p>Contactez-moi sur LinkedIn</p>
+        <a href="#" onclick="linkedinclick()">
+          LinkedIn
+          <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+      <div class="boitecontact">
+        <img src="./images/logocv.png" height="150px"/>
+        <h3></h3>
+        <p>Télécharger mon CV</p>
+        <a href="./CV/C.V. - Daniel_Dabula.docx">
+          Curriculum Vitae
+          <i class="ri-arrow-right-line"></i>
+        </a>
     </div>
+    </div>
+      </div>
+  </section>
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
