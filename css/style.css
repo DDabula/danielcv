@@ -112,13 +112,13 @@ body {
 
 .imageIndex {
   width: 350px;
-  float: right;
+  float: none;
   margin-left: 13%;
   margin-top: 6%;
   border: 3px solid #FBF9F1;
   border-radius: 50px;
   padding: 0px;
-  position: absolute;
+  position: relative;
   z-index: 99;
 }
 
@@ -194,6 +194,7 @@ body {
   position: relative;
   background-color: inherit;
   width: 50%;
+  color: #3c7f89;
 }
 
 .container::after {
@@ -255,6 +256,10 @@ body {
   position: relative;
   border-radius: 6px;
   border-radius: 100px;
+}
+
+.content p{
+  color: black;
 }
 
 .container {
